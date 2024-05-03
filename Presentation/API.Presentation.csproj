@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastEndpoints" Version="5.24.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\API.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Happenings\GetById\" />
+    <Folder Include="Happenings\GetMultiple\" />
+    <Folder Include="Happenings\Remove\" />
+    <Folder Include="Happenings\UpdateSession\" />
+    <Folder Include="Happenings\RemoveSession\" />
+    <Folder Include="Happenings\Update\" />
+    <Folder Include="Identity\Logout\" />
+    <Folder Include="Orders\Add\" />
+    <Folder Include="Orders\GetMultipleForCustomer\" />
+    <Folder Include="Orders\GetById\" />
+    <Folder Include="Orders\Remove\" />
+    <Folder Include="Orders\Update\" />
+    <Folder Include="Customers\Add\" />
+    <Folder Include="Customers\GetMultiple\" />
+    <Folder Include="Customers\GetById\" />
+    <Folder Include="Customers\Remove\" />
+    <Folder Include="Products\Add\" />
+    <Folder Include="Products\GetMultiple\" />
+    <Folder Include="Products\GetById\" />
+    <Folder Include="Products\Remove\" />
+    <Folder Include="Products\Update\" />
+  </ItemGroup>
+
+</Project>
